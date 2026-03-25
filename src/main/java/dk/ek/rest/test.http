@@ -1,8 +1,8 @@
 ###
-GET http://localhost:7070/api/msg/hello
+GET http://localhost:7700/api/msg/hello
 
 ###
-POST http://localhost:7070/api/auth/register
+POST http://localhost:7700/api/auth/register
 
 {
 "username": "fromRest2",
