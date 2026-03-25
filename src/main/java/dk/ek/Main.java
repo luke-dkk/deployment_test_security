@@ -24,6 +24,6 @@ public class Main {
                 .cors()
                 .exceptions()
                 .apiExceptions()
-                .start(7070);
+                .start(7700);
     }
 }

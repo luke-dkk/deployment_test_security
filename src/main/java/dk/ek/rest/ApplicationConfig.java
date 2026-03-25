@@ -141,7 +141,7 @@ public class ApplicationConfig {
 //        });
 
         config.events.serverStarted(() ->
-                System.out.println("Javalin started on http://localhost:7070/api")
+                System.out.println("Javalin started on http://localhost:7700/api")
         );
 
         config.events.serverStopped(() ->
