@@ -36,4 +36,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/securitydemo:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/deployment_test_security:latest
