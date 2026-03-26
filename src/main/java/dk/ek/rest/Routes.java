@@ -40,7 +40,7 @@ public class Routes {
                 on.put("msg", "Hello World from protected user route");
                 post("register", securityController::register );
                 post("login", securityController::login);
-                get("protected", ctx->ctx.json(on).status(200), Role.USER, Role.ADMIN);
+                get("protected", ctx->ctx.json(on).status(200),Role.ANYONE, Role.USER, Role.ADMIN);
             });
             default -> throw new IllegalArgumentException("Unknown resource name: " + resourceName);
         };
