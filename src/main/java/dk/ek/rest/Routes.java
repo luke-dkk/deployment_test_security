@@ -30,7 +30,7 @@ public class Routes {
         return switch (resourceName.toLowerCase()) {
             case "msg" -> () -> path("msg", () -> {
             ObjectNode on = objectMapper.createObjectNode();
-            on.put("msg", "Hello World from watchtower");
+            on.put("msg", "Hello World from watchtower - I am now online");
                 get("hello", ctx -> ctx.json(on));
                 post("echo", ctx -> ctx.result(ctx.body()));
             });
